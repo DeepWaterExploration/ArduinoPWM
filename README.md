@@ -21,3 +21,8 @@ https://code.google.com/archive/p/arduino-pwm-frequency-library/downloads
 
 Original Arduino Forum library post by Runnerup (Sam Knight):
 https://forum.arduino.cc/index.php?topic=117425.0
+
+Modified by DeepWater Exploration:
+
+1. Adding floating point PWM control
+

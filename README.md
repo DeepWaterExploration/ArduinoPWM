@@ -24,6 +24,34 @@ cd ArduinoPWM
 
 Run all the commands below from inside this folder.
 
+## Quick Start (Ubuntu)
+
+If you are on Ubuntu, automated scripts handle setup, bootloader burning, and flashing with automatic hardware detection:
+
+```bash
+# 1. Install dependencies, udev rules, and AVR core
+./setup.sh
+
+# Option A: One-step full flash (burns bootloader + flashes sketch)
+# Connect both USBtiny and Sync Board USB; fails immediately if either is missing:
+./flash-all.sh
+
+# Option B: Individual step-by-step scripts
+./flash-bootloader.sh     # Autodetects USBtiny / 1781:0c9f and burns bootloader
+./flash-program.sh        # Autodetects Sync Board FTDI / 0403:6001 and flashes sketch
+
+# Open serial monitor (autodetects port, no flashing):
+./flash-program.sh -monitor
+# or:
+./monitor.sh
+```
+
+---
+
+## Manual Setup and Instructions
+
+The sections below explain the manual process and instructions for other platforms (macOS, Windows).
+
 ## 2. Install the command-line tools
 
 ### macOS

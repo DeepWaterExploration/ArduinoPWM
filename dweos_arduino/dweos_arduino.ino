@@ -3,7 +3,7 @@
 // Pin configuration
 int led = 9;            // LED pin
 int brightness = 127;   // Initial brightness value for the PWM duty cycle
-float frequency = 60.3; // Initial frequency in Hz
+float frequency = 60; // Initial frequency in Hz
 
 void setup()
 {
